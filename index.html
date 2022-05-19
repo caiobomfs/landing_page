@@ -40,13 +40,14 @@
         </section>
         <h2 class="clientes-titulo">alguns clientes</h2>
         <section class="clientes">
-            
             <div class="slider">
-                <a href="#slide-1">1</a>
-                <a href="#slide-2">2</a>
-                <a href="#slide-3">3</a>
-                <a href="#slide-4">4</a>
-                <a href="#slide-5">5</a>
+                
+                <a href="#slide-1" onclick="keepLocation(window.pageYOffset);" >1</a>
+                <a href="#slide-2" onclick="keepLocation(window.pageYOffset);" >2</a>
+                <a href="#slide-3" onclick="keepLocation(window.pageYOffset);" >3</a>
+                <a href="#slide-4" onclick="keepLocation(window.pageYOffset);" >4</a>
+                <a href="#slide-5" onclick="keepLocation(window.pageYOffset);" >5</a>
+               
                 <div class="slides">
                     <div id="slide-1" >
                         <img src="cliente1.png" style="width: 280px ;height: 100px;"/>
@@ -72,14 +73,27 @@
                         <img src="cliente15.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente16.png" style="width: 280px ;height: 100px;" />
                     </div>
-                <div id="slide-5">
+                    <div id="slide-5">
                         <img src="cliente17.png" style="width: 280px ;height: 100px" />
                         <img src="cliente18.png" style="width: 280px ;height: 100px" />
                         <img src="cliente19.png" style="width: 280px ;height: 100px" />
                         <img src="cliente20.png" style="width: 280px ;height: 100px"/>
                 </div>
             </div>
-
+             <script language="JavaScript" type="text/javascript">
+                
+                function keepLocation(oldOffset) {
+                  if (window.pageYOffset!= null){
+                    st=oldOffset;
+                  }
+                  if (document.body.scrollWidth!= null){
+                    st=oldOffset;
+                  }
+                  setTimeout('window.scrollTo(0,st)',10);
+                 
+                }
+                
+                </script>
         </div>
 
         </section>
@@ -194,3 +208,6 @@
     </footer>
 </body>
 </html>
+
+
+
