@@ -199,7 +199,9 @@ width: 1155px;
     font-size: 100px; */
   }
 
+  .slider .scrollButton,
   .slider > a {
+    cursor: pointer;
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;

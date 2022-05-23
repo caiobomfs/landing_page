@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Fabrica Info</title>
     <link rel="stylesheet" type="text/CSS" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <img class="header-image" SRC="logo.png" alt="logo da fabrica info">
@@ -21,36 +23,42 @@
     </header>
     <main class="contents">
         <section class="main-content">
-            <div >
-            <div class="main-content-writing">
-               <div> <img class="main-content-image" src="papel.jpg"></div>
+            <div>
+                <div class="main-content-writing">
+                    <div> <img class="main-content-image" src="papel.jpg"></div>
 
-                <div><h1 class="main-content-title">GoDocs</h1> 
-                <div><h2 class="main-content-subtitle" class="main-content-title"><strong>Acesse já sua conta</strong> </h2></div>
-                <div class="main-p"class="main-content-title">
-               <p>Gerencie seus documentos em </p>
-                   <p> uma plataforma moderna, com a </p>
-                    <p>integração de todos os suportes </p>
-                     <p>físicos e o controle do arquivo físico e da tramitação de seus </p>
-                      <p> processos.</p></div>
-                 <div class="centro"><button class="main-content-button" >teste</button></div></div>
+                    <div>
+                        <h1 class="main-content-title">GoDocs</h1>
+                        <div>
+                            <h2 class="main-content-subtitle" class="main-content-title"><strong>Acesse já sua
+                                    conta</strong> </h2>
+                        </div>
+                        <div class="main-p" class="main-content-title">
+                            <p>Gerencie seus documentos em </p>
+                            <p> uma plataforma moderna, com a </p>
+                            <p>integração de todos os suportes </p>
+                            <p>físicos e o controle do arquivo físico e da tramitação de seus </p>
+                            <p> processos.</p>
+                        </div>
+                        <div class="centro"><button class="main-content-button">teste</button></div>
+                    </div>
+                </div>
             </div>
-            </div>
-      
+
         </section>
         <h2 class="clientes-titulo">alguns clientes</h2>
         <section class="clientes">
             <div class="slider">
-                
-                <a href="#slide-1" onclick="keepLocation(window.pageYOffset);" >1</a>
-                <a href="#slide-2" onclick="keepLocation(window.pageYOffset);" >2</a>
-                <a href="#slide-3" onclick="keepLocation(window.pageYOffset);" >3</a>
-                <a href="#slide-4" onclick="keepLocation(window.pageYOffset);" >4</a>
-                <a href="#slide-5" onclick="keepLocation(window.pageYOffset);" >5</a>
-               
+
+                <div class="scrollButton" onclick="goToSlide(1)">1</div>
+                <div class="scrollButton" onclick="goToSlide(2)">2</div>
+                <div class="scrollButton" onclick="goToSlide(3)">3</div>
+                <div class="scrollButton" onclick="goToSlide(4)">4</div>
+                <div class="scrollButton" onclick="goToSlide(5)">5</div>
+
                 <div class="slides">
-                    <div id="slide-1" >
-                        <img src="cliente1.png" style="width: 280px ;height: 100px;"/>
+                    <div id="slide-1">
+                        <img src="cliente1.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente2.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente3.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente4.png" style="width: 280px ;height: 100px;" />
@@ -58,18 +66,18 @@
                     <div id="slide-2">
                         <img src="cliente5.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente6.png" style="width: 280px ;height: 100px;" />
-                        <img src="cliente7.png" style="width: 280px ;height: 100px;"/>
+                        <img src="cliente7.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente8.png" style="width: 280px ;height: 100px;" />
                     </div>
                     <div id="slide-3">
-                        <img src="cliente9.png"  style="width: 280px ;height: 100px;"/>
-                        <img src="cliente10.png" style="width: 280px ;height: 100px;"/>
+                        <img src="cliente9.png" style="width: 280px ;height: 100px;" />
+                        <img src="cliente10.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente11.png" style="width: 280px ;height: 100px;" />
-                        <img src="cliente12.png" style="width: 280px ;height: 100px;"/>
+                        <img src="cliente12.png" style="width: 280px ;height: 100px;" />
                     </div>
                     <div id="slide-4">
-                        <img src="cliente13.png"style="width: 280px ;height: 100px;" />
-                        <img src="cliente14.png" style="width: 280px ;height: 100px;"/>
+                        <img src="cliente13.png" style="width: 280px ;height: 100px;" />
+                        <img src="cliente14.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente15.png" style="width: 280px ;height: 100px;" />
                         <img src="cliente16.png" style="width: 280px ;height: 100px;" />
                     </div>
@@ -77,24 +85,18 @@
                         <img src="cliente17.png" style="width: 280px ;height: 100px" />
                         <img src="cliente18.png" style="width: 280px ;height: 100px" />
                         <img src="cliente19.png" style="width: 280px ;height: 100px" />
-                        <img src="cliente20.png" style="width: 280px ;height: 100px"/>
+                        <img src="cliente20.png" style="width: 280px ;height: 100px" />
+                    </div>
                 </div>
-            </div>
-             <script language="JavaScript" type="text/javascript">
-                
-                function keepLocation(oldOffset) {
-                  if (window.pageYOffset!= null){
-                    st=oldOffset;
-                  }
-                  if (document.body.scrollWidth!= null){
-                    st=oldOffset;
-                  }
-                  setTimeout('window.scrollTo(0,st)',10);
-                 
-                }
-                
+                <script language="JavaScript" type="text/javascript">
+
+                    function goToSlide(slideTo) {
+                        document.querySelector('#slide-' + slideTo).scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'nearest'});
+                        return;
+                    }
+
                 </script>
-        </div>
+            </div>
 
         </section>
 
@@ -102,112 +104,121 @@
             <img src="documentos.png">
             <div class="exemplo1">
                 <h1 class="te1">Digitalizaçao de <br><strong>Documentos</strong></h1>
-                <p class="pe1">  <br>Cuidamos de seus documentos!<br><br>Digitalizamos todos os seus <br> documentos para agilizar e dar <br>mais segurança aos processos <br>de negócio.</p>
+                <p class="pe1"> <br>Cuidamos de seus documentos!<br><br>Digitalizamos todos os seus <br> documentos para
+                    agilizar e dar <br>mais segurança aos processos <br>de negócio.</p>
             </div>
             <img src="guarda.png" />
             <div class="exemplo2">
                 <h1 class="te2">Guarda e<br><strong>Gestão Arquivística</strong></h1>
-                    <p class="pe2"> <br>Realizamos a gestão física dos <br> seus arquivos. Deixe seus <br> documentos com quem entende <br>e ainda economize espaço físico!</p>
+                <p class="pe2"> <br>Realizamos a gestão física dos <br> seus arquivos. Deixe seus <br> documentos com
+                    quem entende <br>e ainda economize espaço físico!</p>
             </div>
-         </section> 
+        </section>
 
         <section class="secondary-content">
             <h3 class="secondary-content-title">Trabalhe Conosco</h3>
             <p class="secondary-content-subtitle1"></p>
-           <div class="bloco">
-            <div> <img class="trabalhe" src="trabalhe.jpg" > </div>
-            <div class="borda">
-            <div> <form class="secondary-content-form">
+            <div class="bloco">
+                <div> <img class="trabalhe" src="trabalhe.jpg"> </div>
+                <div class="borda">
                     <div>
-                            <label class="label" for="nome">Nome completo</label>
-                            <input class="secondary-content-form2" type="text" id="nome" name="nome" required value placeholder="Nome completo"> 
-                            
-                            <label class="label" for="email">Seu email</label>
-                            <input class="secondary-content-form2" type="text" id="email" name="email" required value placeholder="exemplo@exemplo.com"> 
-                    </div>
-                    <div>
-                            <label class="label"  for="nascimento">Data de nascimento</label>
-                            <input  class="secondary-content-form2"  type="date" id="nascimento" name="nascimento" required value placeholder="dd/mm/aaaa "> 
+                        <form class="secondary-content-form">
+                            <div>
+                                <label class="label" for="nome">Nome completo</label>
+                                <input class="secondary-content-form2" type="text" id="nome" name="nome" required value
+                                    placeholder="Nome completo">
 
-                            <label class="label" for="rg">RG</label>
-                            <input class="secondary-content-form2" type="text" id="rg" name="rg" required value placeholder="RG"> 
-                    </div>
-                    <div>
-                            <label class="label" for="cpf">CPF</label>
-                            <input class="secondary-content-form2" type="text" id="cpf" name="cpf" required value placeholder="CPF"> 
+                                <label class="label" for="email">Seu email</label>
+                                <input class="secondary-content-form2" type="text" id="email" name="email" required
+                                    value placeholder="exemplo@exemplo.com">
+                            </div>
+                            <div>
+                                <label class="label" for="nascimento">Data de nascimento</label>
+                                <input class="secondary-content-form2" type="date" id="nascimento" name="nascimento"
+                                    required value placeholder="dd/mm/aaaa ">
 
-                            <label class="label" for="endereço">Endereço</label>
-                            <input class="secondary-content-form2" type="text" id="endereço" name="endereço" required value placeholder="Endereço"> 
-                    </div>
-                    <div>
-                            <label class="label" for="cidade">Cidade</label>
-                            <input class="secondary-content-form2" type="text" id="cidade" name="cidade" required value placeholder="Cidade"> 
+                                <label class="label" for="rg">RG</label>
+                                <input class="secondary-content-form2" type="text" id="rg" name="rg" required value
+                                    placeholder="RG">
+                            </div>
+                            <div>
+                                <label class="label" for="cpf">CPF</label>
+                                <input class="secondary-content-form2" type="text" id="cpf" name="cpf" required value
+                                    placeholder="CPF">
 
-                            <label class="label" for="telefone">Telefone</label>
-                            <input class="secondary-content-form2" type="tel" id="" name="telefone" required value placeholder="Telefone"> 
+                                <label class="label" for="endereço">Endereço</label>
+                                <input class="secondary-content-form2" type="text" id="endereço" name="endereço"
+                                    required value placeholder="Endereço">
+                            </div>
+                            <div>
+                                <label class="label" for="cidade">Cidade</label>
+                                <input class="secondary-content-form2" type="text" id="cidade" name="cidade" required
+                                    value placeholder="Cidade">
+
+                                <label class="label" for="telefone">Telefone</label>
+                                <input class="secondary-content-form2" type="tel" id="" name="telefone" required value
+                                    placeholder="Telefone">
+                            </div>
+                            <div style="margin-top: 15px;">
+                                <div></div>
+                                <button class="secondary-content-button">enviar meu curriculo </button>
+                            </div>
                     </div>
-                    <div style="margin-top: 15px;">
-                        <div></div>
-                    <button class="secondary-content-button" >enviar meu curriculo </button> 
+
                 </div>
-                </div >
-               
-                </div>
-            </form>
-           </div>
-           
-        </div>
+                </form>
+            </div>
+
+            </div>
         </section>
     </main>
     <footer class="footer">
         <section class="footer-itens">
-        <div> 
-            <nav class="footer-menu">
-                <h1 class="footer-menu-title">Menu Principal</h1>
-                <a class="footer-menu-item" href="index.html">Home</a>
-                <a class="footer-menu-item" href="servicos.html">Serviços</a>
-                <a class="footer-menu-item" href="sobreNos.html">sobre nos</a>
-                <a class="footer-menu-item" href="blog.html">Blog</a>
-                <a class="footer-menu-item" href="portfolio.html">Portfólio</a>
-                <a class="footer-menu-item" href="">Trabalhe Conosco</a>
-            </nav>
-        </div> 
-                <div> 
-                    <nav class="footer-menu2">
-                        <h1 class="footer-menu-title">Serviços</h1>
-                        <a class="footer-menu-item" href="index.html">Digitalização de Documentos</a>
-                        <a class="footer-menu-item" href="servicos.html">Gestão de Documentos</a>
-                        <a class="footer-menu-item" href="sobreNos.html">Processamento de Imagens</a>
-                        <a class="footer-menu-item" href="blog.html">Microfilmagem de documentos</a>
-                        <a class="footer-menu-item" href="portfolio.html">Guarda e Gestão Arquivística</a>
-                        <a class="footer-menu-item" href="">Gestão do Protocolo e Atendimento</a>
-                        <a class="footer-menu-item" href="">Gestão de Suprimentos</a>
-                    </nav>
-                </div>
-                <div> 
-                    <h1 id="redess" class="footer-menu-title">Redes</h1>
-                    <nav class="redes">
-                            <a class="redes" href="index.html">
-                            <img class="redes" src="facebook.png"> 
-                            </a>
-                            <a class="redes" href="index.html">
-                            <img class="redes" src="instagram.png" > 
-                            </a>
-                            <a class="redes" href="index.html">
-                            <img class="redes" src="linkedin.jpg" > 
-                            </a>
-                    </nav>
-                </div>
-                    
-                <div> 
-                    <h1 id="certificados" class="footer-menu-title">Certificações </h1> 
-                    <img class="footer-image" src="selo-iso9001-transparente.png"> 
-                        
-                </div>
-            </section>
+            <div>
+                <nav class="footer-menu">
+                    <h1 class="footer-menu-title">Menu Principal</h1>
+                    <a class="footer-menu-item" href="index.html">Home</a>
+                    <a class="footer-menu-item" href="servicos.html">Serviços</a>
+                    <a class="footer-menu-item" href="sobreNos.html">sobre nos</a>
+                    <a class="footer-menu-item" href="blog.html">Blog</a>
+                    <a class="footer-menu-item" href="portfolio.html">Portfólio</a>
+                    <a class="footer-menu-item" href="">Trabalhe Conosco</a>
+                </nav>
+            </div>
+            <div>
+                <nav class="footer-menu2">
+                    <h1 class="footer-menu-title">Serviços</h1>
+                    <a class="footer-menu-item" href="index.html">Digitalização de Documentos</a>
+                    <a class="footer-menu-item" href="servicos.html">Gestão de Documentos</a>
+                    <a class="footer-menu-item" href="sobreNos.html">Processamento de Imagens</a>
+                    <a class="footer-menu-item" href="blog.html">Microfilmagem de documentos</a>
+                    <a class="footer-menu-item" href="portfolio.html">Guarda e Gestão Arquivística</a>
+                    <a class="footer-menu-item" href="">Gestão do Protocolo e Atendimento</a>
+                    <a class="footer-menu-item" href="">Gestão de Suprimentos</a>
+                </nav>
+            </div>
+            <div>
+                <h1 id="redess" class="footer-menu-title">Redes</h1>
+                <nav class="redes">
+                    <a class="redes" href="index.html">
+                        <img class="redes" src="facebook.png">
+                    </a>
+                    <a class="redes" href="index.html">
+                        <img class="redes" src="instagram.png">
+                    </a>
+                    <a class="redes" href="index.html">
+                        <img class="redes" src="linkedin.jpg">
+                    </a>
+                </nav>
+            </div>
+
+            <div>
+                <h1 id="certificados" class="footer-menu-title">Certificações </h1>
+                <img class="footer-image" src="selo-iso9001-transparente.png">
+
+            </div>
+        </section>
     </footer>
 </body>
+
 </html>
-
-
-
